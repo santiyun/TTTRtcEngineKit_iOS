@@ -16,7 +16,7 @@ spec.vendored_frameworks = '*.framework'
 #spec.vendored_libraries = '*.a'
 
 spec.libraries    = "z", "c++", "xml2", "sqlite3"
-spec.frameworks = 'ReplayKit', 'CoreTelephoney', 'SystemConfiguration'
+spec.frameworks = 'ReplayKit', 'CoreTelephony', 'SystemConfiguration'
 
 spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
 
