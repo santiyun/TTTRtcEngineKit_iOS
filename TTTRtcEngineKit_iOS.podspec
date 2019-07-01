@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
 spec.name         = "TTTRtcEngineKit_iOS"
-spec.version      = "2.2.1"
+spec.version      = "2.2.2"
 spec.summary      = "TTTRtcEngineKit_iOS"
-spec.description  = "TTTRtcEngineKit_iOS Pod"
+spec.description  = "TTTRtcEngineKit_iOS Set Bitcode NO"
 
 spec.homepage     = "https://github.com/santiyun/TTTRtcEngineKit_iOS"
 spec.license      = "MIT"
@@ -10,7 +10,7 @@ spec.license      = "MIT"
 spec.author             = { "santiyun" => "sdyzsdut@163.com" }
 
 spec.platform     = :ios, "8.0"
-spec.source       = { :git => "https://github.com/santiyun/TTTRtcEngineKit_iOS.git", :tag => "2.2.1" }
+spec.source       = { :git => "https://github.com/santiyun/TTTRtcEngineKit_iOS.git", :tag => "2.2.2" }
 
 spec.vendored_frameworks = '*.framework'
 #spec.vendored_libraries = '*.a'
@@ -18,9 +18,8 @@ spec.vendored_frameworks = '*.framework'
 spec.libraries    = "z", "c++", "xml2", "sqlite3"
 spec.frameworks = 'ReplayKit', 'CoreTelephony', 'SystemConfiguration'
 
-spec.pod_target_xcconfig = {
-    'VALID_ARCHS[sdk=iphonesimulator*]' => '',
-    'ENABLE_BITCODE'           => 'NO'
-}
+spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
+
+spec.user_target_xcconfig =  { 'ENABLE_BITCODE' => 'NO' }
 
 end
