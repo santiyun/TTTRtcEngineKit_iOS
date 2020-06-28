@@ -1,13 +1,13 @@
 Pod::Spec.new do |spec|
-spec.name         = "TTTRtcEngineKit_iOS"
+spec.name         = "TTTRtcEngineKit"
 spec.version      = "2.9.5"
-spec.summary      = "TTTRtcEngineKit_iOS"
-spec.description  = "Version 2.9.5"
+spec.summary      = "TTTRtcEngineKit iOS"
+spec.description  = "iOS SDK for TTTRtcEngineKit"
 
 spec.homepage     = "https://github.com/santiyun/TTTRtcEngineKit_iOS"
 spec.license      = "MIT"
 
-spec.author             = { "santiyun" => "sdyzsdut@163.com" }
+spec.author       = { "doubon" => "doubon@foxmail.com" }
 
 spec.platform     = :ios, "8.0"
 spec.source       = { :git => "https://github.com/santiyun/TTTRtcEngineKit_iOS.git", :tag => "2.9.5" }
